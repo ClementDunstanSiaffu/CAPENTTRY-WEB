@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <% include partials/head.ejs %>
+</head>
+    
+<body>
+ <table class="table table-striped">
+<thead>
+    <tr>
+        <th>Username</th>
+        <th>Phone number</th>
+        <th>Location</th>
+        <th>Order</th>
+        
+    </tr>
+</thead>
+ <tbody>
+
+        
+        <% for(var i=0; i < list.length; i++) { %>
+            
+            
+         
+     <tr >
+       
+            <td><%= list[i].name %></td>
+            <td><%= list[i].phone %></td>
+            <td><%= list[i].location %></td>
+            <td><%= list[i].message %></td>
+          
+             
+        </tr>
+         <% } %>   
+     
+ </tbody>
+ </table>
+
+</body>
+
+</html>

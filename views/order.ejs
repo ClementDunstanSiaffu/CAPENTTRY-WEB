@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <% include partials/head.ejs %>
+</head>
+<body >
+    <div class="bg-container-contact100" style="background-image: url(/images/image40.jpg);"></div>
+
+    <div class="container-contact100">
+        <div class="wrap-contact100">
+
+            <div class="contact100-form-title" style="background-image: url(images/image39.jpg);">
+              <span>Fill the form for the online ordering of our services</span>
+            </div>
+
+            <form action="/orders"  method="POST"    class="contact100-form validate-form" class="krey3" autocomplete="off">
+                <div class="wrap-input100 validate-input">
+                  <input id="name" class="input100" type="text" name="name" placeholder="Your full name">
+                  <span class="focus-input100"></span>
+                  <label class="label-input100" for="name">
+                    <span class="lnr lnr-user m-b-2"></span>
+                  </label>
+                </div>
+
+                <div class="wrap-input100 validate-input">
+                    <input id="email" class="input100" type="text" name="phone" placeholder="Your phone number">
+                    <span class="focus-input100"></span>
+                    <label class="label-input100" for="email">
+                      <span class="lnr lnr-envelope m-b-5"></span>
+                    </label>
+                  </div>
+          
+          
+                  <div class="wrap-input100 validate-input">
+                    <input id="phone" class="input100" type="text" name="location" placeholder="Your location">
+                    <span class="focus-input100"></span>
+                    <label class="label-input100" for="phone">
+                      <span class="lnr lnr-smartphone m-b-2"></span>
+                    </label>
+                  </div>
+          
+          
+                  <div class="wrap-input100 validate-input">
+                    <textarea  id="message" class="input100" name="message" placeholder="Your order..." cols="10" rows="2"></textarea>
+                
+                  </div>
+          
+                  <div class="container-contact100-form-btn">
+                    <button class="contact100-form-btn">
+                      Send Now
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+        
+</body>
+  </body>
+  </html>
